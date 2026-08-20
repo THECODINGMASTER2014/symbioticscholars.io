@@ -1,0 +1,2173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Symbiotic Scholars | Online Tuition</title>
+
+<link href="https://forms.gle/xNnzH8daeTYP6QMdA"
+rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   COLOR PALETTE
+===================================================== */
+
+:root{
+    --black:#080808;
+    --dark:#121212;
+    --dark-green:#0b3d2e;
+    --green:#16834b;
+    --light-green:#2fbf71;
+    --gold:#d4af37;
+    --light-gold:#f4d35e;
+    --white:#ffffff;
+    --light:#f5f7f5;
+    --gray:#666;
+}
+
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--light);
+    color:#333;
+    line-height:1.6;
+}
+
+section{
+    padding:90px 8%;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+
+    background:
+    radial-gradient(
+        circle at top right,
+        rgba(212,175,55,.18),
+        transparent 30%
+    ),
+
+    linear-gradient(
+        135deg,
+        #050505,
+        #0b241b,
+        #06140f
+    );
+
+    color:white;
+    min-height:700px;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 0;
+
+    gap:30px;
+}
+
+
+.logo-area{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+}
+
+
+.logo-image{
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:2px solid var(--gold);
+}
+
+
+.logo{
+
+    font-size:27px;
+
+    font-weight:800;
+
+    color:var(--gold);
+
+    white-space:nowrap;
+}
+
+
+.logo span{
+
+    color:var(--light-green);
+
+}
+
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:var(--gold);
+
+}
+
+
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-7px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--gold);
+
+    transition:.3s;
+
+}
+
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    min-height:600px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding-top:70px;
+
+    padding-bottom:70px;
+
+}
+
+
+.hero-text{
+
+    flex:1;
+
+    max-width:700px;
+
+}
+
+
+.hero-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border:1px solid var(--gold);
+
+    color:var(--gold);
+
+    border-radius:30px;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+.hero h1{
+
+    font-size:64px;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+
+.hero h1 span{
+
+    color:var(--gold);
+
+}
+
+
+.hero p{
+
+    font-size:18px;
+
+    color:#ddd;
+
+    margin-bottom:35px;
+
+    max-width:650px;
+
+}
+
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.button{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:var(--gold);
+
+    color:var(--black);
+
+    font-weight:700;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    border:2px solid var(--gold);
+
+}
+
+
+.button:hover{
+
+    background:var(--green);
+
+    border-color:var(--green);
+
+    color:white;
+
+    transform:translateY(-4px);
+
+}
+
+
+.button-outline{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:transparent;
+
+    color:white;
+
+    font-weight:600;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    border:2px solid var(--green);
+
+    transition:.3s;
+
+}
+
+
+.button-outline:hover{
+
+    background:var(--green);
+
+    transform:translateY(-4px);
+
+}
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+.hero-image img{
+
+    width:450px;
+
+    max-width:100%;
+
+    border-radius:25px;
+
+    border:4px solid var(--gold);
+
+    box-shadow:
+        0 0 30px rgba(212,175,55,.18),
+        0 20px 50px rgba(0,0,0,.5);
+
+}
+
+
+/* =====================================================
+   TITLES
+===================================================== */
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:55px;
+
+}
+
+
+.title h2{
+
+    font-size:40px;
+
+    color:var(--dark-green);
+
+    margin-bottom:10px;
+
+}
+
+
+.title h2 span{
+
+    color:var(--gold);
+
+}
+
+
+.title p{
+
+    color:var(--gray);
+
+}
+
+
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-section{
+
+    background:white;
+
+}
+
+
+.about{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+
+.about-text p{
+
+    margin-bottom:20px;
+
+    font-size:16px;
+
+}
+
+
+.about-list{
+
+    margin-top:25px;
+
+    list-style:none;
+
+}
+
+
+.about-list li{
+
+    margin:12px 0;
+
+    font-weight:600;
+
+}
+
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    border:4px solid var(--gold);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+/* =====================================================
+   CLASSES
+===================================================== */
+
+.classes-section{
+
+    background:var(--light);
+
+}
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    border-top:5px solid var(--gold);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-top-color:var(--green);
+
+}
+
+
+.card-icon{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--dark-green);
+
+    color:var(--gold);
+
+    border-radius:15px;
+
+    font-size:25px;
+
+    margin-bottom:20px;
+
+}
+
+
+.card h3{
+
+    color:var(--dark-green);
+
+    font-size:23px;
+
+    margin-bottom:15px;
+
+}
+
+
+.card p{
+
+    color:var(--gray);
+
+}
+
+
+/* =====================================================
+   SUBJECTS
+===================================================== */
+
+.subjects-section{
+
+    background:white;
+
+}
+
+
+.subjects{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+
+.subject-box{
+
+    background:#fafafa;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    border-left:6px solid var(--gold);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.07);
+
+}
+
+
+.subject-box:hover{
+
+    border-left-color:var(--green);
+
+}
+
+
+.subject-box h3{
+
+    color:var(--dark-green);
+
+    font-size:23px;
+
+    margin-bottom:20px;
+
+}
+
+
+.subject-box ul{
+
+    padding-left:20px;
+
+    columns:2;
+
+}
+
+
+.subject-box li{
+
+    margin:8px 0;
+
+}
+
+
+/* =====================================================
+   NOTES
+===================================================== */
+
+.note-red{
+
+    color:#c0392b;
+
+    font-weight:600;
+
+}
+
+
+.note-green{
+
+    color:var(--green);
+
+    font-weight:600;
+
+}
+
+
+.cb-box{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    background:#eef8f1;
+
+    border-radius:15px;
+
+    border-left:4px solid var(--green);
+
+}
+
+
+/* =====================================================
+   ACTIVITY SECTION
+===================================================== */
+
+.activity-area{
+
+    margin-top:30px;
+
+}
+
+
+.activity-title{
+
+    color:var(--dark-green);
+
+    font-size:22px;
+
+    margin-bottom:15px;
+
+}
+
+
+.activity-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+}
+
+
+.activity-button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:12px 20px;
+
+    border-radius:30px;
+
+    background:var(--black);
+
+    color:var(--gold);
+
+    border:2px solid var(--gold);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+.activity-button:hover{
+
+    background:var(--gold);
+
+    color:var(--black);
+
+    transform:translateY(-2px);
+
+}
+
+
+.activity-button.active{
+
+    background:var(--green);
+
+    color:white;
+
+    border-color:var(--green);
+
+}
+
+
+/* =====================================================
+   DEFINITION SLIDER
+===================================================== */
+
+.definition-slider{
+
+    max-height:0;
+
+    overflow:hidden;
+
+    opacity:0;
+
+    transform:translateY(-10px);
+
+    transition:
+        max-height .45s ease,
+        opacity .3s ease,
+        transform .3s ease,
+        margin .3s ease;
+
+    background:
+    linear-gradient(
+        135deg,
+        #080808,
+        #0b3d2e
+    );
+
+    color:white;
+
+    border-radius:18px;
+
+    margin-top:0;
+
+}
+
+
+.definition-slider.open{
+
+    max-height:400px;
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    margin-top:20px;
+
+    padding:25px;
+
+    border:1px solid var(--gold);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.25);
+
+}
+
+
+.definition-slider h4{
+
+    color:var(--gold);
+
+    font-size:25px;
+
+    margin-bottom:10px;
+
+}
+
+
+.definition-slider p{
+
+    color:#ddd;
+
+    font-size:16px;
+
+}
+
+
+.close-hint{
+
+    margin-top:15px;
+
+    color:var(--light-green) !important;
+
+    font-size:13px !important;
+
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.features{
+
+    background:
+    linear-gradient(
+        135deg,
+        #0a0a0a,
+        #0b3d2e
+    );
+
+    color:white;
+
+}
+
+
+.features .title h2{
+
+    color:white;
+
+}
+
+
+.features .title p{
+
+    color:#ccc;
+
+}
+
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+.feature{
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    background:
+    rgba(255,255,255,.06);
+
+    border:
+    1px solid rgba(212,175,55,.35);
+
+    border-radius:18px;
+
+    transition:.3s;
+
+}
+
+
+.feature:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--gold);
+
+}
+
+
+.feature-icon{
+
+    font-size:35px;
+
+    margin-bottom:15px;
+
+}
+
+
+.feature h3{
+
+    color:var(--gold);
+
+    margin-bottom:8px;
+
+}
+
+
+.feature p{
+
+    color:#ccc;
+
+    font-size:14px;
+
+}
+
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+.contact{
+
+    background:
+    linear-gradient(
+        135deg,
+        #050505,
+        #073627
+    );
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+.contact h2{
+
+    color:var(--gold);
+
+    font-size:40px;
+
+    margin-bottom:20px;
+
+}
+
+
+.contact-name{
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+
+.phone{
+
+    font-size:20px;
+
+    color:var(--light-green);
+
+    margin:10px 0 30px;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    background:#050505;
+
+    color:#aaa;
+
+    text-align:center;
+
+    padding:25px;
+
+    border-top:2px solid var(--gold);
+
+}
+
+
+footer strong{
+
+    color:var(--gold);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:1000px){
+
+    .hero h1{
+
+        font-size:50px;
+
+    }
+
+    .feature-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width:800px){
+
+    nav{
+
+        flex-direction:column;
+
+    }
+
+    nav ul{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+        gap:18px;
+
+    }
+
+    .hero{
+
+        text-align:center;
+
+        flex-direction:column;
+
+    }
+
+    .hero h1{
+
+        font-size:42px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .about{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .subjects{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    section{
+
+        padding:65px 6%;
+
+    }
+
+    header{
+
+        padding:15px 6%;
+
+    }
+
+    .hero h1{
+
+        font-size:36px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .title h2{
+
+        font-size:32px;
+
+    }
+
+    .feature-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .subject-box ul{
+
+        columns:1;
+
+    }
+
+    .activity-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .activity-button{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* =====================================================
+   END CSS
+===================================================== */
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
+
+
+<nav>
+
+
+<div class="logo-area">
+
+
+<img
+src="logo.jpeg"
+alt="Symbiotic Scholars Logo"
+class="logo-image"
+>
+
+
+<div class="logo">
+
+Symbiotic Scholars
+<span>(+/+)</span>
+
+</div>
+
+
+</div>
+
+
+<ul>
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#classes">Classes</a>
+</li>
+
+<li>
+<a href="#subjects">Subjects</a>
+</li>
+
+<li>
+<a href="#features">Benefits</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+
+</nav>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<div class="hero">
+
+
+<div class="hero-text">
+
+
+<div class="hero-badge">
+
+PERSONALISED ONLINE LEARNING
+
+</div>
+
+
+<h1>
+
+Learn Better.<br>
+
+<span>Achieve More.</span>
+
+</h1>
+
+
+<p>
+
+Expert online learning with one dedicated tutor.
+Choose between personalised One-to-One classes or
+interactive Small Group classes and learn from anywhere.
+
+</p>
+
+
+<div class="hero-buttons">
+
+
+<a
+href="https://docs.google.com/forms/d/e/1FAIpQLSdQQgfbEEJJDxhn1j-CzbiXzQ3zZG6PMo5N2ZS7J0huoUnX6w/viewform"
+class="button"
+target="_blank"
+>
+
+Book a Free Demo
+
+</a>
+
+
+<a
+href="#about"
+class="button-outline"
+>
+
+Explore More
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+<div class="hero-image">
+
+
+<img
+src="online-tution-classes-1024x585.jpg"
+alt="Online Tuition Classes"
+>
+
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section
+id="about"
+class="about-section"
+>
+
+
+<div class="title">
+
+
+<h2>
+
+About
+<span>
+Symbiotic Scholars (+/+)
+</span>
+
+</h2>
+
+
+<p>
+
+Personalised learning designed for academic success.
+
+</p>
+
+
+</div>
+
+
+
+<div class="about">
+
+
+<div class="about-text">
+
+
+<p>
+
+<strong>
+Symbiotic Scholars (+/+)
+</strong>
+
+is an independent online tuition platform run by
+one experienced tutor dedicated to helping students
+succeed academically.
+
+</p>
+
+
+<p>
+
+Every class is personalised, interactive, and designed
+to strengthen concepts, improve confidence, and achieve
+better results.
+
+</p>
+
+
+
+<ul class="about-list">
+
+
+<li>
+🟡 One Dedicated Tutor
+</li>
+
+
+<li>
+🟢 100% Online Learning
+</li>
+
+
+<li>
+🟡 One-to-One Classes
+</li>
+
+
+<li>
+🟢 Small Group Classes
+</li>
+
+
+<li>
+🟡 Current Balance (CB)
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+<div class="about-image">
+
+
+<img
+src="online-tution-classes-1024x585.jpg"
+alt="Teacher conducting online tuition"
+>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CLASSES
+===================================================== -->
+
+<section id="classes">
+
+
+<div class="title">
+
+
+<h2>
+
+Choose Your
+<span>
+Learning Style
+</span>
+
+</h2>
+
+
+<p>
+
+Find the learning environment that works best for you.
+
+</p>
+
+
+</div>
+
+
+
+<div class="cards">
+
+
+<div class="card">
+
+
+<div class="card-icon">
+👨‍🏫
+</div>
+
+
+<h3>
+One-to-One Tuition
+</h3>
+
+
+<p>
+
+Individual attention, timings decided by your teacher,
+and focused doubt-solving.
+
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<div class="card-icon">
+👥
+</div>
+
+
+<h3>
+Small Group Classes
+</h3>
+
+
+<p>
+
+Learn with a limited number of students, around
+3–5 learners, in an interactive online session
+at affordable fees.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     SUBJECTS
+===================================================== -->
+
+<section
+id="subjects"
+class="subjects-section"
+>
+
+
+<div class="title">
+
+
+<h2>
+
+Subjects
+<span>
+Offered
+</span>
+
+</h2>
+
+
+<p>
+
+Academic support for Classes 6–12.
+
+</p>
+
+
+</div>
+
+
+
+<div class="subjects">
+
+
+
+<!-- SUBJECT LIST -->
+
+<div class="subject-box">
+
+
+<h3>
+📚 Classes 6–12
+</h3>
+
+
+<ul>
+
+<li>Mathematics</li>
+
+<li>Science</li>
+
+<li>English</li>
+
+<li>Hindi</li>
+
+<li>Sanskrit</li>
+
+<li>Social Science</li>
+
+<li>Physics</li>
+
+<li>Chemistry</li>
+
+<li>Biology</li>
+
+<li>Psychology</li>
+
+<li>History</li>
+
+<li>Geography</li>
+
+</ul>
+
+
+</div>
+
+
+
+<!-- IMPORTANT NOTE -->
+
+<div class="subject-box">
+
+
+<h3>
+📌 Important Note
+</h3>
+
+
+<p>
+
+All major school subjects are available.
+
+</p>
+
+
+<br>
+
+
+<p class="note-red">
+
+❌ Computer Science is not offered.
+
+</p>
+
+
+<br>
+
+
+<p class="note-red">
+
+❌ Third languages are not offered except Sanskrit.
+
+</p>
+
+
+<br>
+
+
+<p class="note-red">
+
+❌ Geography is offered only till Class X.
+
+</p>
+
+
+
+<!-- =====================================================
+     ACTIVITIES
+===================================================== -->
+
+<div class="activity-area">
+
+
+<h3 class="activity-title">
+
+🏆 Points & Activities
+
+</h3>
+
+
+
+<div class="activity-buttons">
+
+
+<button
+class="activity-button"
+onclick="toggleDefinition('cb',this)"
+>
+
+💰 CB
+
+</button>
+
+
+<button
+class="activity-button"
+onclick="toggleDefinition('faceoff',this)"
+>
+
+⚔️ Face Off
+
+</button>
+
+
+<button
+class="activity-button"
+onclick="toggleDefinition('marathon',this)"
+>
+
+🏃 Marathon
+
+</button>
+
+
+<button
+class="activity-button"
+onclick="toggleDefinition('gambling',this)"
+>
+
+🎲 Gambling
+
+</button>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     CB DEFINITION
+===================================================== -->
+
+<div
+id="cb"
+class="definition-slider"
+>
+
+
+<h4>
+💰 Current Balance (CB)
+</h4>
+
+
+<p>
+
+Current Balance (CB) is the reward currency of
+Symbiotic Scholars. Students can earn CB through
+activities, challenges and hard work.
+
+</p>
+
+
+<p class="close-hint">
+
+Click "CB" again to close.
+
+</p>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     FACE OFF DEFINITION
+===================================================== -->
+
+<div
+id="faceoff"
+class="definition-slider"
+>
+
+
+<h4>
+⚔️ Face Off
+</h4>
+
+
+<p>
+
+1v1 a student answering questions to earn points.
+
+</p>
+
+
+<p class="close-hint">
+
+Click "Face Off" again to close.
+
+</p>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     MARATHON DEFINITION
+===================================================== -->
+
+<div
+id="marathon"
+class="definition-slider"
+>
+
+
+<h4>
+🏃 Marathon
+</h4>
+
+
+<p>
+
+Versus other students in a competition to sharpen
+your skills.
+
+</p>
+
+
+<p class="close-hint">
+
+Click "Marathon" again to close.
+
+</p>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     GAMBLING DEFINITION
+===================================================== -->
+
+<div
+id="gambling"
+class="definition-slider"
+>
+
+
+<h4>
+🎲 Gambling
+</h4>
+
+
+<p>
+
+Answer questions to earn CB.
+Doubles every time. If you lose you restart from your Orignal CB before the Gambling
+
+</p>
+
+
+<p class="close-hint">
+
+Click "Gambling" again to close.
+
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     BENEFITS
+===================================================== -->
+
+<section
+id="features"
+class="features"
+>
+
+
+<div class="title">
+
+
+<h2>
+Why Choose Symbiotic Scholars?
+</h2>
+
+
+<p>
+
+A learning system focused on consistency,
+confidence and progress.
+
+</p>
+
+
+</div>
+
+
+
+<div class="feature-grid">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🎯
+</div>
+
+<h3>
+Focused Learning
+</h3>
+
+<p>
+Classes designed around understanding concepts.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+💡
+</div>
+
+<h3>
+Clear Concepts
+</h3>
+
+<p>
+Strengthen your basics and solve doubts effectively.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🏆
+</div>
+
+<h3>
+Earn Points
+</h3>
+
+<p>
+Participate in activities and earn Points and CB.
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+📈
+</div>
+
+<h3>
+Continuous Growth
+</h3>
+
+<p>
+Build confidence and improve academic performance.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section
+class="contact"
+id="contact"
+>
+
+
+<h2>
+Get Started Today
+</h2>
+
+
+<p class="contact-name">
+
+Symbiotic Scholars (+/+)
+
+</p>
+
+
+<p class="phone">
+
+📞 +91 88097 20305
+
+</p>
+
+
+
+<a
+href="https://docs.google.com/forms/d/e/1FAIpQLSdQQgfbEEJJDxhn1j-CzbiXzQ3zZG6PMo5N2ZS7J0huoUnX6w/viewform"
+class="button"
+target="_blank"
+>
+
+Book a Free Demo
+
+</a>
+
+
+<br>
+<br>
+
+
+<a
+href="#"
+class="button-outline"
+>
+
+↑ Go To The Start
+
+</a>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+© 2026
+
+<strong>
+Symbiotic Scholars (+/+)
+</strong>
+
+• All Rights Reserved
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+let currentlyOpen = null;
+
+
+function toggleDefinition(id,button){
+
+
+    const slider =
+        document.getElementById(id);
+
+
+    /*
+
+       CLICK SAME BUTTON:
+       CLOSE THE SLIDER
+
+    */
+
+    if(currentlyOpen === id){
+
+
+        slider.classList.remove("open");
+
+
+        button.classList.remove("active");
+
+
+        currentlyOpen = null;
+
+
+        return;
+
+    }
+
+
+
+    /*
+
+       CLOSE PREVIOUS SLIDER
+
+    */
+
+    if(currentlyOpen !== null){
+
+
+        const previousSlider =
+            document.getElementById(currentlyOpen);
+
+
+        previousSlider.classList.remove("open");
+
+
+        const buttons =
+            document.querySelectorAll(
+                ".activity-button"
+            );
+
+
+        buttons.forEach(function(btn){
+
+            btn.classList.remove("active");
+
+        });
+
+    }
+
+
+
+    /*
+
+       OPEN SELECTED SLIDER
+
+    */
+
+    slider.classList.add("open");
+
+
+    button.classList.add("active");
+
+
+    currentlyOpen = id;
+
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
